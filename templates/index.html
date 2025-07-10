@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>YouTube Video Downloader</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+</head>
+<body>
+    <div class="container">
+        <h1>YouTube Video Downloader</h1>
+        <form id="downloadForm">
+            <label for="url">Enter YouTube Video URL:</label>
+            <input type="text" id="url" name="url" required />
+            <div class="format-selection">
+                <label><input type="radio" name="format" value="mp3" checked /> MP3 (Audio)</label>
+                <label><input type="radio" name="format" value="mp4" /> MP4 (Video)</label>
+            </div>
+            <button type="submit">Download</button>
+        </form>
+        <div id="status"></div>
+        <div id="progressBarContainer" style="display:none;">
+            <progress id="progressBar" value="0" max="100"></progress>
+            <span id="progressPercent">0%</span>
+        </div>
+        <div id="downloadLink"></div>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

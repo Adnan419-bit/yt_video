@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>YT Video Downloader Free - Loading</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #121212;
+    font-family: 'Open Sans', 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #ffffff;
+    overflow-x: hidden;
+  }
+
+  .logo {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 30px;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/7/75/YouTube_social_white_square_%282017%29.svg') no-repeat center center;
+    background-size: contain;
+  }
+
+  .title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #bb86fc;
+    text-shadow: 0 0 10px #bb86fc;
+    margin-bottom: 20px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+  }
+
+  .subtitle {
+    font-size: 1.3rem;
+    margin-bottom: 50px;
+    color: #cccccc;
+    text-shadow: 0 0 10px rgba(187,134,252,0.5);
+  }
+
+  .loader {
+    width: 100px;
+    height: 100px;
+    border: 12px solid rgba(187, 134, 252, 0.3);
+    border-top: 12px solid #bb86fc;
+    border-radius: 50%;
+    animation: spin 1.5s linear infinite;
+    margin-bottom: 40px;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  .dev-info {
+    font-size: 1rem;
+    color: #cccccc;
+    letter-spacing: 1.5px;
+  }
+</style>
+</head>
+<body>
+  <div class="logo"></div>
+  <div class="title">YT VIDEO DOWNLOADER FREE</div>
+  <div class="loader"></div>
+  <div class="subtitle">Loading, please wait...</div>
+  <div class="dev-info">Developed by SECDET</div>
+  <script>
+    // Redirect to home after 5 seconds
+    setTimeout(function() {
+      window.location.href = "/home";
+    }, 5000);
+  </script>
+</body>
+</html>
